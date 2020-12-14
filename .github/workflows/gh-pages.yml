@@ -36,7 +36,7 @@ jobs:
           cp -rf gh-pages/* gh-pages/.nojekyll gh-pages/.spa ./
           cd ../../../
           dotnet build
-          dotnet publish -c Release -o cargo
+          dotnet publish -c Release -f net5 -o cargo
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -48,7 +48,7 @@ jobs:
       - name: Package Nightly Nuget 📦
         run: |
           SUFFIX=`date "+%y%m%d%H%M%S"`
-          dotnet pack src/UEditor/UEditor.csproj /p:PackageVersion=$Version-nightly-${SUFFIX} -c Release -o publish --no-build --no-restore
+          dotnet pack src/UEditor/UEditor.csproj /p:PackageVersion=$Version-nightly-${SUFFIX} -c Release -o publish
 
       - name: Publish to Nuget ✔
         run: |
