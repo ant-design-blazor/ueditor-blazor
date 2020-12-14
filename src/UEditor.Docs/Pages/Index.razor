@@ -1,0 +1,37 @@
+﻿@page "/"
+
+<h1>UEditor Blazor</h1>
+
+UEditor of blazor.
+
+<UEditor.Editor @ref="editor" @bind-Value="value" @bind-Html="html" Height="500" MinHeight="500" />
+
+<br />
+
+
+Content:@value
+
+<br />
+
+@((MarkupString)html)
+
+<br />
+<button @onclick="()=>{ value = DateTime.Now.ToString(); }">Change Value</button>
+<button @onclick="Click">Get Value</button>
+@code{
+    string value = "Hello Blazor!";
+    string html;
+
+    Editor editor;
+
+    async Task Click()
+    {
+        var value = await editor.GetValueAsync();
+        Console.WriteLine(value);
+    }
+
+    void Rendererd()
+    {
+        Console.WriteLine("rendererd!");
+    }
+}
