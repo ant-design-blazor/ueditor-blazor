@@ -37,5 +37,9 @@ namespace UEditor
         {
             await Js.InvokeVoidAsync("UEditorBlazor.destroy", _ref);
         }
+
+        public async Task SetHeight(string value, bool stop = false) {
+            await Js.InvokeVoidAsync("UEditorBlazor.setHeight", _ref, value, stop);
+        }
     }
 }
