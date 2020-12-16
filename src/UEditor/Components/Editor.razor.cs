@@ -19,7 +19,7 @@ namespace UEditor
                 if (_value != value)
                 {
                     _value = value;
-                    _wattingUpdate = true;
+                    _waitingUpdate = true;
                 }
             }
         }
@@ -44,7 +44,13 @@ namespace UEditor
         public string Placeholder { get; set; }
 
         [Parameter]
-        public string Height { get; set; }
+        public string Height {
+            get => _heightValue; 
+            set {
+                SetHeight(value);
+                _heightValue = value;
+            }
+        }
 
         [Parameter]
         public string Width { get; set; }
@@ -58,8 +64,8 @@ namespace UEditor
         private ElementReference _ref;
 
         private bool _editorRendered = false;
-        private bool _wattingUpdate = false;
-        private string _value;
+        private bool _waitingUpdate = false;
+        private string _value, _heightValue = "500";
 
         private bool _afterFirstRender = false;
 
@@ -91,9 +97,9 @@ namespace UEditor
         protected override async Task OnParametersSetAsync()
         {
             await base.OnParametersSetAsync();
-            if (_wattingUpdate && _editorRendered)
+            if (_waitingUpdate && _editorRendered)
             {
-                _wattingUpdate = false;
+                _waitingUpdate = false;
                 await SetValue(_value, true);
             }
         }

@@ -4,7 +4,8 @@
 
 UEditor of blazor.
 
-<UEditor.Editor @ref="editor" @bind-Value="value" @bind-Html="html" Height="500" MinHeight="500" />
+<!--似乎Width需要使用px等单位，或者%；Height因为js检查了int以及增加了px所以只需要数字即可-->
+<UEditor.Editor @ref="editor" @bind-Value="value" @bind-Html="html" Height="500" MinHeight="500" Width="700px" also-Width="100%" />
 
 <br />
 

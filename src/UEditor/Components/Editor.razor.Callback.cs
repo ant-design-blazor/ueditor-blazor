@@ -31,7 +31,7 @@ namespace UEditor
         public async Task HandleInput(string value)
         {
             _value = value;
-            _wattingUpdate = false;
+            _waitingUpdate = false;
 
             if (ValueChanged.HasDelegate)
             {
