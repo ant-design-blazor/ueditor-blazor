@@ -3649,7 +3649,7 @@
       "url": "_content\/UEditor\/third-party\/zeroclipboard\/ZeroClipboard.swf"
     },
     {
-      "hash": "sha256-9TfGjbCW7\/BcHDATVommzfJDeqHU9poMQSEaIWk\/GP0=",
+      "hash": "sha256-+Lb+d2kl9t0N9zl8MgqZbvtQRENPgefNoihx9FZxZHY=",
       "url": "_content\/UEditor\/ueditor-blazor.js"
     },
     {
@@ -3713,15 +3713,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-7pBowQ8vx7CQpI4p\/ri9UBRaM6T2UMUeE9jX\/3zIkmg=",
+      "hash": "sha256-dAO9K8Bs\/3NwBN09caKrqf8MISWGHHD1XOJoxKI1VPU=",
       "url": "_framework\/UEditor.dll"
     },
     {
-      "hash": "sha256-sog2Gj0qrtXSWsoRPu\/R9YKnus6yEN9uix4HRmTHKmE=",
+      "hash": "sha256-wql+OijsB0cwLOGwq8AmSLQ1gFUrAeyKtJXO8lyyE6A=",
       "url": "_framework\/UEditor.Docs.dll"
     },
     {
-      "hash": "sha256-784T+YsKHTAXjOd\/Uf9kGZecI9n8j3KUPIhWt0F9qMU=",
+      "hash": "sha256-tEiP334CwRVuW1aIqkuli1if0ATIxDcCDVRCWKuIfL8=",
       "url": "_framework\/UEditor.Docs.WebAssembly.dll"
     },
     {
@@ -3793,7 +3793,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-yD9pweyUYiZYy+YtGBpOecXIhypvjgV0Sr3\/yNdr3nQ=",
+      "hash": "sha256-ysxo\/ngQ8ZmoOvhEy6NF0pTGKrp82+1XUVeGkkJulmk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -3801,5 +3801,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "K9IS4Al+"
+  "version": "kugZMegW"
 };

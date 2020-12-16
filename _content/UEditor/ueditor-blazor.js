@@ -25,6 +25,9 @@ window.UEditorBlazor = window.UEditorBlazor || {
   setValue: (domRef, value, append) => {
     domRef.UEditor.setContent(value, append);
   },
+  setHeight: (domRef, value, stop) => {
+    domRef.UEditor.setHeight(value, stop);
+  },
   // insertValue: (domRef, value, render = true) => {
   //   domRef.UEditor.insertValue(value, render);
   // },
