@@ -100,7 +100,7 @@ namespace UEditor
             if (_waitingUpdate && _editorRendered)
             {
                 _waitingUpdate = false;
-                await SetValue(_value, true);
+                await SetValue(_value);
             }
         }
 
