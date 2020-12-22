@@ -3713,7 +3713,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-58WOqkamCtHaJIk760QndcnWErFFzmXEt22bbpko87U=",
+      "hash": "sha256-287Ex9H2QLhJ0nCggMJvn3aYbbJ1syRtDOUaGBA6EEg=",
       "url": "_framework\/UEditor.dll"
     },
     {
@@ -3793,7 +3793,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-+K\/bJTt5BFwJ3iiLa+q67NIMdllMDKuULFar9JpGD14=",
+      "hash": "sha256-uyDB1Z6Ces8PkMAx7ZYU8S2o3cevXzg6SCj8juZFpHU=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -3801,5 +3801,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "UqJG7A0d"
+  "version": "nbf1LBom"
 };
