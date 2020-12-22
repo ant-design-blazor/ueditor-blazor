@@ -3649,7 +3649,7 @@
       "url": "_content\/UEditorBlazor\/third-party\/zeroclipboard\/ZeroClipboard.swf"
     },
     {
-      "hash": "sha256-+Lb+d2kl9t0N9zl8MgqZbvtQRENPgefNoihx9FZxZHY=",
+      "hash": "sha256-7qBRSiboGvAsAc0zIQDPLdFD++Gf07jiP0aqm35MQxM=",
       "url": "_content\/UEditorBlazor\/ueditor-blazor.js"
     },
     {
@@ -3801,5 +3801,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "nbf1LBom"
+  "version": "x2AD1noi"
 };
