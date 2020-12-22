@@ -16,9 +16,9 @@ A wysiwyg rich text web editor based on UEditor and Blazor.
 
 2. Import js resources
     ```html
-        <script src="_content/UEditor/neditor.config.js"></script>
-        <script src="_content/UEditor/neditor.all.min.js" defer></script>
-        <script src="_content/UEditor/ueditor-blazor.js"></script>
+        <script src="_content/UEditorBlazor/neditor.config.js"></script>
+        <script src="_content/UEditorBlazor/neditor.all.min.js" defer></script>
+        <script src="_content/UEditorBlazor/ueditor-blazor.js"></script>
     ```
 
 3. That's all! Then you can use the `UEditor.Editor` component.
