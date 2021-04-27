@@ -1,0 +1,18 @@
+﻿@page "/multiple"
+
+<h3>Multiple Instance</h3>
+
+
+<UEditor.Editor @ref="editor1" @bind-Value="value1" @bind-Html="html" Height="500" MinHeight="500" Width="700px" />
+
+<UEditor.Editor @ref="editor2" @bind-Value="value2" @bind-Html="html" Height="500" MinHeight="500" Width="700px"/>
+
+
+@code {
+    string value1 = "Hello Blazor! This is Editor #1";
+    string value2 = "Hello Blazor! This is Editor #2";
+    string html;
+
+    Editor editor1;
+    Editor editor2;
+}
