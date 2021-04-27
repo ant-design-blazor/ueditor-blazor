@@ -1,11 +1,11 @@
 // This file is to show how a library package may provide JavaScript interop features
 // wrapped in a .NET API
-window.UEditorBlazor = window.UEditorBlazor || {
+window.UEditorBlazor = {
   // create UEditor instance
   createUEditor: (domRef, editor, value, options = {}) => {
     options = convertJsonKey(options);
 
-    domRef.UEditor = UE.getEditor(domRef, {
+    domRef.UEditor = UE.getEditor(domRef.id, {
       ...options,
     });
     domRef.UEditor.ready(() => {

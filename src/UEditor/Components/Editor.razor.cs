@@ -44,9 +44,11 @@ namespace UEditor
         public string Placeholder { get; set; }
 
         [Parameter]
-        public string Height {
-            get => _heightValue; 
-            set {
+        public string Height
+        {
+            get => _heightValue;
+            set
+            {
                 SetHeight(value);
                 _heightValue = value;
             }
@@ -116,7 +118,7 @@ namespace UEditor
 
         public void Dispose()
         {
-            Destroy();
+            Task.Run(Destroy);
         }
     }
 }
