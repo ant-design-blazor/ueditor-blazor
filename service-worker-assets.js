@@ -77,7 +77,7 @@
       "url": "gh-pages\/404.html"
     },
     {
-      "hash": "sha256-HpvC9GF0mwk+xJkLIH+1sT\/CyZP+tenwJqJturur2DU=",
+      "hash": "sha256-lvNR8S3iFamOLgeaQ0XjeE18d6MoX3eOyvNdB7XP1NE=",
       "url": "gh-pages\/index.html"
     },
     {
@@ -85,7 +85,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-HpvC9GF0mwk+xJkLIH+1sT\/CyZP+tenwJqJturur2DU=",
+      "hash": "sha256-lvNR8S3iFamOLgeaQ0XjeE18d6MoX3eOyvNdB7XP1NE=",
       "url": "index.html"
     },
     {
@@ -3649,7 +3649,7 @@
       "url": "_content\/UEditorBlazor\/third-party\/zeroclipboard\/ZeroClipboard.swf"
     },
     {
-      "hash": "sha256-7qBRSiboGvAsAc0zIQDPLdFD++Gf07jiP0aqm35MQxM=",
+      "hash": "sha256-h9Wq3FKTzx75o00MaqMeRmz+JaVK2rQEEJ8xHHW71c0=",
       "url": "_content\/UEditorBlazor\/ueditor-blazor.js"
     },
     {
@@ -3713,15 +3713,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-287Ex9H2QLhJ0nCggMJvn3aYbbJ1syRtDOUaGBA6EEg=",
+      "hash": "sha256-nSwqvTgegeC8W5DfjwHmapQBoQTfjYzmQPa03HylQmA=",
       "url": "_framework\/UEditor.dll"
     },
     {
-      "hash": "sha256-hu9vgn7RGw6e6qhOJPVgB6In1Z+yqNYMqFVTMlwiupg=",
+      "hash": "sha256-+JEgquvV\/iTjc2Y3KfLiijh6WFg1OxBmLTXqPfY8lDM=",
       "url": "_framework\/UEditor.Docs.dll"
     },
     {
-      "hash": "sha256-lhSHrqBZn7xKptHS295ZSIVTkdFwzsxj13mIhFf0D2M=",
+      "hash": "sha256-0BqbBNCOgQRN0r3yMWjxn7Co0p8l\/yeMSgDUBmccUe8=",
       "url": "_framework\/UEditor.Docs.WebAssembly.dll"
     },
     {
@@ -3789,11 +3789,11 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-8GdCoPPmpcOCyvH4lRPvlecU6f\/Lipg01sPfsb\/iheQ=",
+      "hash": "sha256-GDIhmEwZM24Yzj569I+zgisFZRw9BPzOKdLHFeoMh7A=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-uyDB1Z6Ces8PkMAx7ZYU8S2o3cevXzg6SCj8juZFpHU=",
+      "hash": "sha256-EcHRe6wodFkM5HF+D8BnCJ3jXF4DrsYYbqAzhp85RfY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -3801,5 +3801,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "x2AD1noi"
+  "version": "PJN8Hfu6"
 };
