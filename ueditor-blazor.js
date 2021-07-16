@@ -2,49 +2,34 @@
 // wrapped in a .NET API
 window.UEditorBlazor = {
   // create UEditor instance
-  createUEditor: (domRef, editor, value, options = {}) => {
+  createUEditor: function(domRef, editor, value, options = {}) {
+
     options = convertJsonKey(options);
 
-    domRef.UEditor = UE.getEditor(domRef.id, {
-      ...options,
-    });
-    domRef.UEditor.ready(() => {
+    domRef.UEditor = UE.getEditor(domRef.id, options);
+    domRef.UEditor.ready(function () {
       editor.invokeMethodAsync('HandleRendered');
     });
-    domRef.UEditor.addListener('contentchange', () => {
+    domRef.UEditor.addListener('contentchange', function () {
       var content = domRef.UEditor.getContent();
       editor.invokeMethodAsync('HandleInput', content);
     });
   },
-  getValue: (domRef) => {
+  getValue: function(domRef) {
     return domRef.UEditor.getContentTxt();
   },
-  getHTML: (domRef) => {
+  getHTML: function(domRef) {
     return domRef.UEditor.getContent();
   },
-  setValue: (domRef, value, append) => {
+  setValue: function(domRef, value, append) {
     domRef.UEditor.setContent(value || "", append);
   },
-  setHeight: (domRef, value, stop) => {
+  setHeight: function(domRef, value, stop) {
     domRef.UEditor.setHeight(value, stop);
   },
-  // insertValue: (domRef, value, render = true) => {
-  //   domRef.UEditor.insertValue(value, render);
-  // },
-  destroy: (domRef) => {
-    domRef.UEditor.destroy();
+  destroy: function(domRef) {
+    //domRef.UEditor.destroy();
   },
-  // preview: (domRef, editor, markdown, options = {}) => {
-  //   options = convertJsonKey(options);
-  //   UEditor.preview(domRef, markdown, {
-  //     ...options,
-  //     after() {
-  //       if (options.handleAfter) {
-  //         editor.invokeMethodAsync('HandleAfter');
-  //       }
-  //     }
-  //   });
-  // }
 }
 
 var convertJsonKey = function (jsonObj) {

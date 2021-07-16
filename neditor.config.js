@@ -29,7 +29,7 @@
 
         // 服务器统一请求接口路径
         //serverUrl: window.NEDITOR_UPLOAD || URL + "php/controller.php",
-        serverUrl: "",
+        serverUrl: window.NEDITOR_UPLOAD,
         imageActionName: "uploadimage",
         scrawlActionName: "uploadscrawl",
         videoActionName: "uploadvideo",
