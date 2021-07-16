@@ -61,9 +61,16 @@ namespace UEditor
         public string MinHeight { get; set; }
 
         [Parameter]
+        public string Style { get; set; }
+
+        [Parameter]
+        public string Class { get; set; }
+
+        [Parameter]
         public bool Outline { get; set; }
 
         private ElementReference _ref;
+        private readonly string _id = Guid.NewGuid().ToString();
 
         private bool _editorRendered = false;
         private bool _waitingUpdate = false;
@@ -118,7 +125,7 @@ namespace UEditor
 
         public void Dispose()
         {
-            Task.Run(Destroy);
+
         }
     }
 }
