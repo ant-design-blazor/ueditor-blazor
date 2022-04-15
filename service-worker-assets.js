@@ -841,7 +841,7 @@
       "url": "_content\/UEditorBlazor\/neditor.parse.min.js"
     },
     {
-      "hash": "sha256-GFlVUzacXTQ5xb2WAWkh3sz6gFBpQVlAkmmOY6+TX1E=",
+      "hash": "sha256-tFWCnCBRsGihYWLVp3eHSDB3q692txSySpvnOF\/WRbs=",
       "url": "_content\/UEditorBlazor\/neditor.service.js"
     },
     {
@@ -3801,5 +3801,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "PZjr7jg8"
+  "version": "E+JhH9sT"
 };
