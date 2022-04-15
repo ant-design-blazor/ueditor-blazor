@@ -2,7 +2,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO;
 
 namespace UEditor.Docs.Server
 {
@@ -20,6 +23,7 @@ namespace UEditor.Docs.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
             services.AddServerSideBlazor();
         }
 
@@ -39,12 +43,19 @@ namespace UEditor.Docs.Server
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            var image_path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image_path");
+            if(!Directory.Exists(image_path)) Directory.CreateDirectory(image_path);
+            app.UseStaticFiles(new StaticFileOptions {
+                FileProvider = new PhysicalFileProvider(image_path),
+                RequestPath = "/I"
+            });
 
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();
+                endpoints.MapControllers();
                 endpoints.MapFallbackToPage("/_Host");
             });
         }

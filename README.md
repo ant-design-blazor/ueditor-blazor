@@ -39,37 +39,36 @@ A wysiwyg rich text web editor based on UEditor and Blazor.
 
 If you want to implement custom image loading, follow the instructions listed below:
 
-1. Setting the upload api endpoint:
+### 1. Setting the upload api endpoint:
+```html
+<script>
+    window.NEDITOR_UPLOAD = "/api/upload";
+</script>
+```
 
-    ```html
-    <script>
-        window.NEDITOR_UPLOAD = "/api/upload";
-    </script>
-    ```
+In `neditor.service.js`, be sure in `getActionUrl` function, return `window.NEDITOR_UPLOAD`.
 
-2. According to ueditor: http://fex.baidu.com/ueditor/#dev-request_specification	"UEditor Documentation 后端请求规范", json in uploadimage action response will be this:
-    
-    ```json
-        {
-        	"state": "SUCCESS",
-        	"url": "upload/demo.jpg",
-    	    "title": "demo.jpg",
-        	"original": "demo.jpg"
-	      }
-    ```
-    
-    After implementation like above json format response, there will be no images inserted into your editor.
-    
-    **neditor.server.js** line 60 in *getResponseSuccess* method requires there will be a **code** field in json:
-    
-    ```json
-        {
-            "state": "SUCCESS",
-            "url": "upload/demo.jpg",
-            "title": "demo.jpg",
-            "original": "demo.jpg",
-            "code": 200
-        }
-    ```
+### 2. Image upload server implementing:
 
-3. Enjoy.
+#### 2.1 Before adding an api controller, register some stuffs
+
+```c#
+services.AddControllers();
+```
+
+#### 2.2 Add a directory to store images
+
+```c#
+app.UseStaticFiles(new StaticFileOptions {
+    FileProvider = new PhysicalFileProvider(image_path),
+    RequestPath = "/I"
+})
+```
+
+The `/I` suffix is used to show preview images. You can modify `image_path` and `/I` meantime in the controller.
+
+#### 2.3 Write an api controller to process `/api/upload` request
+
+See `ImageController.cs`. Remember the `root` and `result.url` variants should be the same as mentioned in `2.2`.
+
+### 3. Enjoy.
