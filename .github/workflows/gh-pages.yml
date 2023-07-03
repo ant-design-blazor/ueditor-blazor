@@ -20,15 +20,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup .NET Core 3.1
+      - name: Setup .NET Core 7.0
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 3.1.300
-
-      - name: Setup .NET Core 5.0
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 5.0.100
+          dotnet-version: 7.0.100
 
       - name: Publish Docs 🎉
         run: |
@@ -36,7 +31,7 @@ jobs:
           cp -rf gh-pages/* gh-pages/.nojekyll gh-pages/.spa ./
           cd ../../../
           dotnet build
-          dotnet publish -c Release -f net5 -o cargo
+          dotnet publish -c Release -f net7 -o cargo
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
