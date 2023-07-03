@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net5</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net5;net6;net7</TargetFrameworks>
     <RazorLangVersion>3.0</RazorLangVersion>
     <PackageId>UEditorBlazor</PackageId>
     <Authors>James Yeung</Authors>
@@ -18,5 +18,13 @@
 
   <ItemGroup Condition="$(TargetFramework) == 'net5'">
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net6'">
+  	<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="$(TargetFramework) == 'net7'">
+  	<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
   </ItemGroup>
 </Project>
