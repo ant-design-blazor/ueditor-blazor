@@ -21,6 +21,7 @@ A wysiwyg rich text web editor based on UEditor and Blazor.
         </script>
         <script src="_content/UEditorBlazor/neditor.config.js"></script>
         <script src="_content/UEditorBlazor/neditor.all.min.js" defer></script>
+        <script src="_content/UEditorBlazor/neditor.service.js"></script>
         <script src="_content/UEditorBlazor/ueditor-blazor.js"></script>
     ```
 
