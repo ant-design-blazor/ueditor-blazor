@@ -237,7 +237,7 @@
       "url": "gh-pages\/404.html"
     },
     {
-      "hash": "sha256-r6dYyAjgLDF16tgMAPTS+IbDxalG7eMZg66n+siAzXw=",
+      "hash": "sha256-P8yg3dmruP2FNFjQU1ZkcHZSnLSiEY5U4gL+EvAS9fw=",
       "url": "gh-pages\/index.html"
     },
     {
@@ -245,7 +245,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-r6dYyAjgLDF16tgMAPTS+IbDxalG7eMZg66n+siAzXw=",
+      "hash": "sha256-P8yg3dmruP2FNFjQU1ZkcHZSnLSiEY5U4gL+EvAS9fw=",
       "url": "index.html"
     },
     {
@@ -3785,5 +3785,5 @@
       "url": "_content\/UEditorBlazor\/ueditor-blazor.js"
     }
   ],
-  "version": "d3okS\/YI"
+  "version": "aKiPApKZ"
 };
