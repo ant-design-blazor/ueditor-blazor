@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
     <title>UEditor of Blazor</title>
-    <base href="/UEditor-blazor/" />
+    <base href="/uditor-blazor/" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
@@ -16,8 +16,12 @@
 <body>
     <app>Loading...</app>
 
+    <script>
+        window.NEDITOR_UPLOAD = "https://run.mocky.io/v3/baffaf42-0cdb-4302-b769-c19d2161046c";
+    </script>
     <script src="_content/UEditorBlazor/neditor.config.js"></script>
     <script src="_content/UEditorBlazor/neditor.all.min.js" defer></script>
+    <script src="_content/UEditorBlazor/neditor.service.js"></script>
     <script src="_content/UEditorBlazor/ueditor-blazor.js"></script>
 
     <script src="_framework/blazor.webassembly.js"></script>
