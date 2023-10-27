@@ -8,7 +8,8 @@ window.UEditorBlazor = {
 
     domRef.UEditor = UE.getEditor(domRef.id, options);
     domRef.UEditor.ready(function () {
-      editor.invokeMethodAsync('HandleRendered');
+        editor.invokeMethodAsync('HandleRendered');
+        domRef.UEditor.setHeight(options.height);
     });
     domRef.UEditor.addListener('contentchange', function () {
       var content = domRef.UEditor.getContent();
