@@ -3781,9 +3781,9 @@
       "url": "_content\/UEditorBlazor\/third-party\/zeroclipboard\/ZeroClipboard.swf"
     },
     {
-      "hash": "sha256-XgYheQG0jwNBw6sqLbV2yc94GSnz5PYXEGg4V6+yosU=",
+      "hash": "sha256-ZaF\/wWw4y6Cjj\/XH2Va3GXfR8wYwrsxViwZt+HAaomk=",
       "url": "_content\/UEditorBlazor\/ueditor-blazor.js"
     }
   ],
-  "version": "EJnCmSFO"
+  "version": "JU7VBB0o"
 };
